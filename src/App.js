@@ -1,8 +1,12 @@
+import { Fragment } from "react";
+import Head from "./componet/Head/Head";
 
 
 function App() {
   return (
-   <h1>jfjfj</h1>
+    <Fragment>
+      <Head/>
+    </Fragment>
 
   );
 }

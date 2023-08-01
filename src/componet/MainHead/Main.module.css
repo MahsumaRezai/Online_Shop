@@ -1,4 +1,39 @@
 .main{
     width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 180px
     
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 30px
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.text {
+    text-align: center;
+    gap: 20px;
+    display: flex;
+    flex-direction: column
+}
+.para{
+    color: #03cafc;
+    text-transform: initial;
+    font-size: 60px;
+    font-weight: bold
+}
+.title{
+    font-size: 60px;
+    color: black;
+    font-weight: bold
 }

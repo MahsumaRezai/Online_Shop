@@ -6,10 +6,10 @@ const MainHead = (props) => {
     return (
         <Fragment>
             <main className={classes.main}>
-                <div>
-                    <div>
-                     <p>  Welcome</p>  
-                     <p> TO OUR SUNGLASSES</p>
+                <div className={classes.content}>
+                    <div className={classes.text}>
+                        <p className={classes.para}>  Welcome</p>
+                        <p className={classes.title}> TO OUR SUNGLASSES</p>
                     </div>
                     <div>
                         <img src={log} alt="log" />

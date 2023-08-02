@@ -2,7 +2,8 @@ import { Fragment } from "react";
 import Head from '../componet/Head/Head';
 import MainHead from '../componet/MainHead/MainHead';
 import Header from '../componet/Header/Header';
-import HeadCotent from '../componet/Header/HeadContent'
+import HeadCotent from '../componet/Header/HeadContent';
+import Button from '../componet/Button/Button'
 
 const Home = (props) => {
     return (
@@ -11,6 +12,7 @@ const Home = (props) => {
             <HeadCotent />
             <Header />
             <MainHead />
+            <Button></Button>
         </Fragment>
 
     )

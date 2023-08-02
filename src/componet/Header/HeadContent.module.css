@@ -1,7 +1,7 @@
 .links {
     background: white;
     padding-top: -100px;
-    width: fit-content;
+    width: 30%;
     margin:auto;
     margin-top: 20px;
     border-radius: 50px
@@ -10,8 +10,8 @@
 .content {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content:center;
+    align-items: center;
     gap: 30px;
     height: fit-content;
     padding:20px;

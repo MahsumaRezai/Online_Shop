@@ -6,7 +6,7 @@ import Home from "./Pages/Home";
 function App() {
   return (
     <Fragment>
-      <Route path="/home">
+      <Route path="/home" exact>
         <Home/>
       </Route>
      

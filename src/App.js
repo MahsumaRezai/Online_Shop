@@ -1,19 +1,15 @@
 import { Fragment } from "react";
-import Head from "./componet/Head/Head";
-import MainHead from "./componet/MainHead/MainHead";
-import Header from "./componet/Header/Header";
-import HeadCotent from "./componet/Header/HeadContent";
+import {Route} from 'react-router-dom'
+import Home from "./Pages/Home";
 
 
 function App() {
   return (
     <Fragment>
-      <Head />
-      <HeadCotent />
+      <Route path="/home">
+        <Home/>
+      </Route>
      
-
-      <Header />
-      <MainHead />
     </Fragment>
 
   );

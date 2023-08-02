@@ -1,19 +1,17 @@
 import { Fragment } from "react";
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import classes from './HeadContent.module.css';
 
 const HeadCotent = (props) => {
     return (
         <Fragment>
-            <ul>
-
-                <li><Link to='/home'>Home</Link></li>
-                <li><Link to='/glasse'>Our Glasse</Link></li>
-                <li><Link to='/shop'>Shop</Link></li>
-                <li><Link to='/contact'>Contact Us</Link></li>
-
-
-
-
+            <ul className={classes.links}>
+                <div className={classes.content}>
+                    <li><Link to='/home' className={classes.link}>Home</Link></li>
+                    <li><Link to='/glasse' className={classes.link}>Our Glasse</Link></li>
+                    <li><Link to='/shop' className={classes.link}>Shop</Link></li>
+                    <li><Link to='/contact' className={classes.link}>Contact Us</Link></li>
+                </div>
             </ul>
 
 

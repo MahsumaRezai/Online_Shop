@@ -12,7 +12,7 @@ const Home = (props) => {
             <HeadCotent />
             <Header />
             <MainHead />
-            <Button></Button>
+            <Button>Shop Now</Button>
         </Fragment>
 
     )

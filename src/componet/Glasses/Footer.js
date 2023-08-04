@@ -1,9 +1,12 @@
-import classes from './Foooter.module.css'
+import classes from './Foooter.module.css';
+import { Link } from 'react-router-dom'
 const Footer = (props) => {
     return (
-        <footer className={classes.footer}>
+        <div className={classes.footer}>
+             <Link to='' className={classes.link}>mahsuma.rezai8@gmail.com</Link> 
+           
 
-        </footer>
+        </div>
     )
 }
 export default Footer;

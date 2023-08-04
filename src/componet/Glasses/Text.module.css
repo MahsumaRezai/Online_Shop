@@ -1,0 +1,18 @@
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    padding-top: 100px
+}
+.title{
+    font-size: 35px;
+    color: #2a2a2c;
+    font-weight: bold;
+}
+.para {
+    font-size: 17px;
+
+}

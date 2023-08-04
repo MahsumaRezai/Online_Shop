@@ -7,6 +7,7 @@ const Headers = (props) => {
             <div className='image'>
                 <img src={logo} alt="m" />
             </div>
+            
         </Fragment>
     )
 }

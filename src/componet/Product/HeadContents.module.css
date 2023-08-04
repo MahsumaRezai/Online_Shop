@@ -1,9 +1,7 @@
 .links {
     background: white;
-    padding-top: -100px;
     width: fit-content;
     margin:auto;
-    margin-top: 20px;
     border-radius: 50px
 
 }
@@ -15,6 +13,7 @@
     gap: 30px;
     height: fit-content;
     padding:20px;
+
 
     
 }

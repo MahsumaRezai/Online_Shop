@@ -6,6 +6,7 @@ import Image from '../Glasses/Image'
 import Button from "../Glasses/Button";
 import { useState } from 'react'
 import ModuleGlasses from "../Glasses/ModuleGlasses";
+import Footer from "../Glasses/Footer";
 
 const Product = (props) => {
     const [card, setCard] = useState(false);
@@ -22,6 +23,7 @@ const Product = (props) => {
             <Image />
             <Button onClick={form}>send</Button>
             {card && <ModuleGlasses />}
+            <Footer/>
 
 
 

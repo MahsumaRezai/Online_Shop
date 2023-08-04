@@ -9,14 +9,21 @@ const Backdrop = (props) => {
 const Modaloerlay = (props) => {
     return (
         <Card className={classes.modal}>
-            <div className={classes.TextContent}>
+            <div className={classes.TextContent} >
 
-                <h1>Wearing Sunglasses</h1>
-                <p className={classes.text}> The sun’s rays give life to our planet, but they can be blinding to your eyes.<br></br>
-                    If your eyes are sensitive to light, you may need to squint or hold your hand <br></br>
-                    up to block sunlight. That’s not “seeing your best” and could be a safety hazard
-                    while driving, riding a bike, or participating in any activity where you’re moving
-                fast and making quick decisions. Wear sunglasses to help you see your best and navigate more safely.</p>
+                <form className={classes.form}>
+                    <div className={classes.TextContent}>
+                        <h1>Wearing Sunglasses</h1>
+                        <p className={classes.text}>
+                            The sun’s rays give life to our planet, but they can be blinding to your eyes. If your eyes are sensitive to light,
+                             you may need to squint or hold your hand up to block sunlight. That’s not “seeing your best” and could be a safety
+                             hazard while driving, riding a bike, or participating in any activity where you’re moving fast and making quick decisions.
+                             Wear sunglasses to help you see your best and navigate more safely. You could prevent a severe injury to yourself or others.
+                    </p>
+                        <button className={classes.btn}>Read </button>
+
+                    </div>
+                </form>
             </div>
 
 

@@ -43,3 +43,11 @@
       width: 40rem;
     }
   }
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+    padding: 50px
+  }

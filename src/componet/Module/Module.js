@@ -9,11 +9,15 @@ const Backdrop = (props) => {
 const Modaloerlay = (props) => {
     return (
         <Card className={classes.modal}>
-        <form>
-            <label>ksksk</label>
-        </form>
+            <form className={classes.form}>
+                <label>chooise your glasses </label>
+                <input />
+                <label>Add price </label>
+                <input />
+                <button>Send </button>
+            </form>
 
-           
+
         </Card>
     )
 }

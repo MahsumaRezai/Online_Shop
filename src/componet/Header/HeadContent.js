@@ -7,7 +7,7 @@ const HeadCotent = (props) => {
         <Fragment>
             <ul className={classes.links}>
                 <div className={classes.content}>
-                    <li><Link to='/home' className={classes.link}>Home</Link></li>
+                    <li><Link to='' className={classes.link}>Home</Link></li>
                     <li><Link to='/glasse' className={classes.link}>Our Glasse</Link></li>
                     <li><Link to='/shop' className={classes.link}>Shop</Link></li>
                     <li><Link to='/contact' className={classes.link}>Contact Us</Link></li>

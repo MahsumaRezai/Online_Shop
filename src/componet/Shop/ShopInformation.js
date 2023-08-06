@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import image from '../images/shop.png'
+import Footer from "../Glasses/Footer";
 
 const ShopInformation = (props) => {
     return (
@@ -8,7 +9,7 @@ const ShopInformation = (props) => {
 
                 <img src={image} alt='' className='images' />
             </div>
-
+            <Footer />
         </Fragment>
     )
 }

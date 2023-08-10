@@ -1,8 +1,8 @@
-import { Fragment} from "react";
+import { Fragment } from "react";
 import Product from "../componet/Product/Product";
 
 const Producet = (props) => {
-  
+
     return (
         <Fragment>
             <Product />

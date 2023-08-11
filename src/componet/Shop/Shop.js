@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import ShopInformation from "./ShopInformation";
 import ShpoText from "./shopText";
+import Footer from "../Glasses/Footer";
 
 
 const Shop = (props) => {
@@ -9,6 +10,7 @@ const Shop = (props) => {
             <ShpoText />
 
             <ShopInformation />
+            <Footer/>
 
         </Fragment>
     )

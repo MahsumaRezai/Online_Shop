@@ -7,9 +7,11 @@ import Button from '../componet/Button/Button'
 import Module from '../componet/Module/Module';
 import Text from "../componet/Glasses/Text";
 import Image from "../componet/Glasses/Image";
-import Shop from "../componet/Shop/Shop";
 import Form from "../componet/Contact/Form";
 import Footer from "../componet/Glasses/Footer";
+import ModuleGlasses from '../componet/Glasses/ModuleGlasses';
+import ShpoText from "../componet/Shop/shopText";
+import ShopInformation from "../componet/Shop/ShopInformation";
 
 
 const Home = (props) => {
@@ -17,6 +19,11 @@ const Home = (props) => {
     const form = (event) => {
         event.preventDefault();
         setCard(true);
+    }
+    const [cardbtn, setCardbtn] = useState(false);
+    const formBtn = (event) => {
+        event.preventDefault();
+        setCardbtn(true);
     }
     return (
         <Fragment>
@@ -26,18 +33,21 @@ const Home = (props) => {
             <MainHead />
             <Button onClick={form}>Shop Now</Button>
             {card && <Module />}
-            <Shop/>
-            <Text/>
-            <Image/>
-            <Form/>
-            <Footer/>
-    
-           
-            
-    
-           
+            <ShpoText />
+            <ShopInformation/>
+            <Text />
+            <Image />
+            <Button onClick={formBtn}>send</Button>
+            {cardbtn && <ModuleGlasses />}
+            <Form />
+            <Footer />
 
-            
+
+
+
+
+
+
 
 
         </Fragment>

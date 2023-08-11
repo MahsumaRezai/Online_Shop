@@ -1,0 +1,23 @@
+.form {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.form input {
+    width: 40%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background: none;
+    border-bottom: 1px solid gainsboro;
+    height: 40px;
+
+}
+.form label {
+    text-align: left;
+    font-size: 17px;
+    color: gray
+}

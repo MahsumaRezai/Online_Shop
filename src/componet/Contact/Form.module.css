@@ -24,11 +24,19 @@
     color: gray
 }
 .btn {
-    width: 40%;
+    width: 20%;
     background: #03cafc;
     border:  1px solid #03cafc;
     padding: 15px;
     border-radius: 50px;
     font-size: 18px;
-    font-weight: bold
+    margin-top: 50px
+}
+@media screen and (max-width:800px){
+    .btn{
+        width: 20%
+    }
+}
+.text {
+    color: red
 }

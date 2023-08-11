@@ -1,27 +1,84 @@
-import { Fragment } from "react";
-import classes from './Form.module.css'
+import { Fragment, useState } from "react";
+import classes from './Form.module.css';
+import Button from "./Button";
+
 
 const Form = (props) => {
+
+    const [name, setName] = useState('');
+    const [phone, setPhone] = useState('');
+    const [email, setEmail] = useState('');
+    const [massage, setMassage] = useState('');
+
+    const [enterPhone, setEnterdPhone] = useState(false);
+    const [enterName, setEnterdName] = useState(false);
+
+    const [enterEmail, setEnterdEamil] = useState(false);
+    const [enterMassage, setEnterdMassage] = useState(false);
+
+
+
+
+    const FormHandler = (event) => {
+        event.preventDefault();
+        if (name.trim().length === 0) {
+            setEnterdName(true)
+        }
+        if (phone.trim().length === 0) {
+            setEnterdPhone(true)
+        }
+        if (email.length <= 10) {
+            setEnterdEamil(true)
+
+
+        }
+        if (massage.length === 0){
+            setEnterdMassage(true)
+
+        }
+
+    }
+
+    const nameHanlder = (event) => {
+        setName(event.target.value);
+
+    }
+    const passwordHandler = (event) => {
+        setPhone(event.target.value)
+    }
+
+    const emailHanlder = (event) => {
+        setEmail(event.target.value);
+
+    }
+    const massageHandler = (event) => {
+        setMassage(event.target.value)
+    }
     return (
+
         <Fragment>
-            <form className={classes.form}>
-                <div className="label">
-                    <label htmlFor="name">Name</label>
+            <form className={classes.form} onSubmit={FormHandler}>
+                <label>Name</label>
+                <input onChange={nameHanlder} />
+                {enterName && <p className={classes.text}> Plases Enter your Name</p>}
 
-                </div>
-                <input id="name" />
+                <label>Phone Number</label>
+                <input onChange={passwordHandler} />
+                {enterPhone && <p className={classes.text}>Plases Enter your Phone Number</p>}
 
-                <label htmlFor="number"> Phone Number</label>
-                <input id="number" />
+                <label>Email</label>
+                <input onChange={emailHanlder} />
+                {enterEmail && <p className={classes.text}>Your Email Address should be  most 12 </p>}
 
-                <label htmlFor="Email">Email</label>
-                <input id="email" />
+                <label>Massage</label>
+                <input onChange={massageHandler} />
+                {enterMassage && <p className={classes.text}>Plases add your massages</p>}
 
-                <label htmlFor="massage">Massage</label>
-                <input id="massage" />
-                <button className={classes.btn}>send</button>
+
+                <Button>Send</Button>
 
             </form>
+
         </Fragment>
     )
 }

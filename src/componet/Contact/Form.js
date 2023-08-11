@@ -19,6 +19,7 @@ const Form = (props) => {
 
                 <label htmlFor="massage">Massage</label>
                 <input id="massage" />
+                <button className={classes.btn}>send</button>
 
             </form>
         </Fragment>

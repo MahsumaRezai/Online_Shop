@@ -2,9 +2,11 @@
     padding-top: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 30px;
+    padding-bottom: 100px;
+    padding-left: 150px
 }
 .form input {
     width: 40%;
@@ -20,4 +22,13 @@
     text-align: left;
     font-size: 17px;
     color: gray
+}
+.btn {
+    width: 40%;
+    background: #03cafc;
+    border:  1px solid #03cafc;
+    padding: 15px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold
 }

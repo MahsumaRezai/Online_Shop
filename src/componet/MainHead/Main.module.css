@@ -32,8 +32,19 @@ img{
     font-size: 60px;
     font-weight: bold
 }
+@media screen and (max-width:600px){
+    .para{
+        font-size: inherit
+    }
+}
 .title{
     font-size: 60px;
     color: black;
-    font-weight: bold
+    font-weight: bold;
+    
+}
+@media screen and (max-width:600px){
+    .title{
+        font-size: inherit
+    }
 }

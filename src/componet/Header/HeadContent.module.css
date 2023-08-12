@@ -32,3 +32,9 @@
 
     
 }
+@media screen and (max-width:600px){
+    .link{
+        font-size: inherit;
+        font-weight: normal
+    }
+}

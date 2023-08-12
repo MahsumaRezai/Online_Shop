@@ -29,3 +29,9 @@
     font-size: 17px;
 
 }
+@media screen and (max-width:600px){
+    .para {
+        font-size: inherit
+
+    }
+}

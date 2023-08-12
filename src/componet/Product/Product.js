@@ -21,9 +21,9 @@ const Product = (props) => {
             <Headers />
             <Text />
             <Image />
-            <Button onClick={form}>send</Button>
+            <Button onClick={form}>Read More</Button>
             {card && <ModuleGlasses />}
-            <Footer/>
+            <Footer />
 
 
 

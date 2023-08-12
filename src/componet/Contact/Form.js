@@ -32,7 +32,7 @@ const Form = (props) => {
 
 
         }
-        if (massage.length === 0){
+        if (massage.length === 0) {
             setEnterdMassage(true)
 
         }
@@ -57,7 +57,9 @@ const Form = (props) => {
     return (
 
         <Fragment>
+
             <form className={classes.form} onSubmit={FormHandler}>
+                <h2 className={classes.title}>Contact Us</h2>
                 <label>Name</label>
                 <input onChange={nameHanlder} />
                 {enterName && <p className={classes.text}> Plases Enter your Name</p>}

@@ -6,8 +6,8 @@ const User = (props) => {
         <Fragment>
             <div className={classes.content}>
                 <div className={classes.text}>
-                    <h2> What say our clients  </h2>
-                    <p> The sun’s rays give life to our planet, but they can be blinding to your eyes.</p>
+                    <h2 className={classes.title}> What say our clients  </h2>
+                    <p className={classes.para}> The sun’s rays give life to our planet, but they can be blinding to your eyes.</p>
                 </div>
 
                 <div className={classes.main}>

@@ -18,6 +18,11 @@
     height: 40px;
 
 }
+.title {
+    font-size: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px
+}
 .form label {
     text-align: left;
     font-size: 17px;

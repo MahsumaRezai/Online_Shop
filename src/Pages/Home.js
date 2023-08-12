@@ -12,6 +12,7 @@ import Footer from "../componet/Glasses/Footer";
 import ModuleGlasses from '../componet/Glasses/ModuleGlasses';
 import ShpoText from "../componet/Shop/shopText";
 import ShopInformation from "../componet/Shop/ShopInformation";
+import User from "../componet/User/User";
 
 
 const Home = (props) => {
@@ -35,7 +36,10 @@ const Home = (props) => {
             {card && <Module />}
             <ShpoText />
             <ShopInformation/>
+            <User/>
+
             <Text />
+
             <Image />
             <Button onClick={formBtn}>send</Button>
             {cardbtn && <ModuleGlasses />}

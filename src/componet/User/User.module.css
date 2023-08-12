@@ -15,7 +15,6 @@
     flex-direction: column
 }
 .main {
-    border: 1px solid black;
     padding: 30px;
     display: flex;
     flex-direction: row;
@@ -24,7 +23,20 @@
     gap: 20px;
     background: black;
     color: white;
-    width: fit-content
+    width: fit-content;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+   
+}
+@keyframes example {
+    0%   {background-color:white; color: black}
+    25%  {background-color: black; color: white}
+    50%  {background-color: white; color: black}
+    100% {background-color: black; color: white}
 }
 .imge {
     box-shadow: 3px 3px 3px 3px gainsboro
